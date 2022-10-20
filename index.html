@@ -13,7 +13,7 @@
 <body>
 
   <!-- * iNIZIO CALCOLO BIGLIETTO -->
-  <div>
+  <div class="container">
     <h1 class="d-flex justify-content-center">Calcola il prezzo del tuo biglietto</h1>
 
     <form>
@@ -29,15 +29,15 @@
         <div class="form-group col-md-4">
           <label for="età">Fascia d'età</label>
           <select class="form-select" id="età">
-            <option>Minorenne </option>
-            <option>Maggiorenne </option>
-            <option>Senior (65+)</option>
+            <option id="minorenne">Minorenne </option>
+            <option id="maggiorenne">Maggiorenne </option>
+            <option id="senior">Senior (65+)</option>
           </select>
         </div>
       </div>
       <div class="d-flex justify-content-center mt-3">
-        <button type="submit" class="btn btn-primary mx-1">Genera</button>
-        <button type="submit" class="btn btn-primary mx-1">Annulla</button>
+        <button class="btn btn-primary mx-1" id="genera">Genera</button>
+        <button type="submit" class="btn btn-primary mx-1" id="annulla">Annulla</button>
       </div>
       
 
@@ -46,8 +46,9 @@
   <!-- * FINE CALCOLO -->
 
   <!-- * IL TUO BIGLIETTO -->
-  <div>
+  <div class="container d-flex justify-content-center mt-5">
     <h3 id="prezzo_biglietto"></h3>
+
   </div>
   <!-- * FINE TUO BIGLIETTO -->
 
