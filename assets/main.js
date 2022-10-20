@@ -1,5 +1,4 @@
 // * Dati inziali
-let NomeUtente = document.getElementById('NomeUtente');
 
 let km = document.getElementById('Km');
 
@@ -15,12 +14,12 @@ let annulla = document.getElementById('button-annulla');
 
 
 
-// IF BUTTON GENERA
+// ! IF BUTTON GENERA
 
 genera.addEventListener("click", function() {
-  console.log (NomeUtente)
-  console.log (km)
-  console.log (eta.value)
+  let NomePasseggero = document.getElementById('NomeUtente').value;
+  console.log (km);
+  console.log (eta.value);
 
   // Prezzo base
 
@@ -42,10 +41,7 @@ genera.addEventListener("click", function() {
     prezzo_totale = prezzo_totale
   }
 
-  document.getElementById('NomeUtente').innerHTML = "Nominativo " + NomeUtente;
+  document.getElementById("NomeTizio").innerHTML = NomePasseggero;
   document.getElementById('prezzo_biglietto').innerHTML = "Costo biglietto è: " + prezzo_totale + "€";
   
 });
-
-
-
