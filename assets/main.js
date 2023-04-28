@@ -44,6 +44,6 @@ genera.addEventListener("click", function() {
   document.getElementById("NomePass").innerHTML = NomePasseggero;
   document.getElementById("prezzo_biglietto").innerHTML = "Costo biglietto è: " + prezzo_totale + "€";
   document.getElementById("offert").innerHTML = "Biglietto base";
-  document.getElementById("carrozza_random").innerHTML = Math.floor(Math.random() * 10);
+  document.getElementById("carrozza_random").innerHTML = Math.floor(Math.random() * 10) + 1;
   document.getElementById("codice_random").innerHTML = Math.floor(Math.random() * 99999);
 });
