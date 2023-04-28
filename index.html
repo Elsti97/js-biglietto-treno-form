@@ -10,7 +10,7 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
-<body class="bg-danger">
+<body class="bg-secondary">
 
   <!-- * iNIZIO CALCOLO BIGLIETTO -->
   <div class="container">
@@ -19,15 +19,15 @@
     <div class="bg-white px-4">
       <div class="row d-flex justify-content-center">
         <div class="form-group col-md-4">
-          <label for="NomeUtente" class="text-danger">Nome Cognome</label>
+          <label for="NomeUtente" class="text-info">Nome Cognome</label>
           <input type="text" class="form-control" id="NomeUtente" placeholder="Inserisci nominativo">
         </div>
         <div class="form-group col-md-4">
-          <label for="Km" class="text-danger">Km da percorrere</label>
+          <label for="Km" class="text-info">Km da percorrere</label>
           <input type="number" class="form-control" id="Km" placeholder="Km da percorrere">
         </div>
         <div class="form-group col-md-4">
-          <label for="eta" class="text-danger">Fascia d'età</label>
+          <label for="eta" class="text-info">Fascia d'età</label>
           <select class="form-select" id="eta">
             <option value="minorenne">Minorenne </option>
             <option value="maggiorenne">Maggiorenne </option>
@@ -51,9 +51,9 @@
 
     <div class="bg-white col-md-4 ps-3">
       <h2>Dettagli Passeggero</h2>
-      <div class="bg-secondary ps-3">
-        <h3>Nome Passaggero</h3>
-        <h4 id="NomeTizio" class="pb-5"></h4>
+      <div class="bg-light ps-3">
+        <h5>Nome Passaggero</h5>
+        <h4 id="NomePass" class="pb-4 mb-0"></h4>
       </div>
     </div>
 
@@ -63,7 +63,7 @@
         <p id="offert"></p>
       </div>
 
-      <div>
+      <div class="bg-light px-3">
         <h5>Carrozza</h5>
         <p id="carrozza_random"></p>
       </div>
@@ -73,7 +73,7 @@
         <p id="codice_random"></p>
       </div>
       
-      <div>
+      <div class="bg-light px-3">
         <h5>Costo Biglietto</h5>
         <p id="prezzo_biglietto"></p>
       </div>
